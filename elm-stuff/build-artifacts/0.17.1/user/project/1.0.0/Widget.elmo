@@ -1,0 +1,44 @@
+var _user$project$Widget$update = F2(
+	function (message, model) {
+		var _p0 = message;
+		return {
+			ctor: '_Tuple2',
+			_0: _elm_lang$core$Native_Utils.update(
+				model,
+				{count: model.count + 1}),
+			_1: _elm_lang$core$Platform_Cmd$none
+		};
+	});
+var _user$project$Widget$initialModel = {count: 0};
+var _user$project$Widget$Model = function (a) {
+	return {count: a};
+};
+var _user$project$Widget$Increase = {ctor: 'Increase'};
+var _user$project$Widget$view = function (model) {
+	return A2(
+		_elm_lang$html$Html$div,
+		_elm_lang$core$Native_List.fromArray(
+			[]),
+		_elm_lang$core$Native_List.fromArray(
+			[
+				A2(
+				_elm_lang$html$Html$div,
+				_elm_lang$core$Native_List.fromArray(
+					[]),
+				_elm_lang$core$Native_List.fromArray(
+					[
+						_elm_lang$html$Html$text(
+						_elm_lang$core$Basics$toString(model.count))
+					])),
+				A2(
+				_elm_lang$html$Html$button,
+				_elm_lang$core$Native_List.fromArray(
+					[
+						_elm_lang$html$Html_Events$onClick(_user$project$Widget$Increase)
+					]),
+				_elm_lang$core$Native_List.fromArray(
+					[
+						_elm_lang$html$Html$text('Click')
+					]))
+			]));
+};
